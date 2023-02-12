@@ -28,7 +28,7 @@ Google Fonts:
 
 # Developer notes
  mailwind package used for implmenting email design. See the github page: 
-[yesandagency.github.io/](https://yesandagency.github.io/avaya-email/)
+[yesandagency.github.io/ndli-email/](https://yesandagency.github.io/ndli-email/)
 
 mailwind --input-html email.html --output-html index.html
 
