@@ -825,29 +825,32 @@
            <tr>
             <td class="p-6" style="background-color:#EDF2F9;">
               <h1 mc:edit="title" mc:label="Title">This Week in Lucy</h1>
-              <h2 class="py-8 border-t-5" mc:edit="subtitle" mc:label="Sub Title">
+              <h2 class="py-8 border-t-5" mc:edit="subtitle" mc:label="Sub Title" mc:hideable>
                 Upcoming Events
               </h2>
-              <div class="pb-6">
+              <div class="pb-6" mc:hideable>
                 <img class="w-full" src="assets/cover-image.png" mc:edit="cover_image" mc:label="Cover Image" />
               </div>
 
-              <h3 >Student Opportunities</h3>
-              <h4>Trying to decide between industry and academia?</h4>
-              <p class="font-bold">The Lucy Graduate Scholars invite graduate students to the inaugural panel of the Lucy CONNECT Series.</p>
-              <p class="font-bold">Friday, December 2nd<br>
-                12:00-1:00 pm</p>
-
+              <h3 mc:edit="subtitle2" mc:label="Section Heading">Student Opportunities</h3>
+              <div>
+                <h4>Trying to decide between industry and academia?</h4>
+                <p class="font-bold">The Lucy Graduate Scholars invite graduate students to the inaugural panel of the Lucy CONNECT Series.</p>
+                <p class="font-bold">Friday, December 2nd<br>
+                  12:00-1:00 pm</p>
+  
+                
+                <p>Learn from distinguished panelists about differences in career advancement between industry and academia and how to foster mutually beneficial collaborations in the data science/technology industry.  Panelists will include:</p>
+                <ul>
+                  <li><span class="underline">John Behrens</span>, Idzik Computing & Digital Technology Program</li>
+                  <li><span class="font-bold">Monisha Ghosh, Electrical Engineering</span></li>
+                  <li>Matt Harrison, Chase Manufacturing</li>
+                  <li>Fanny Ye, Computer Science and Engineering</li>
+                </ul>
+                <p>RSVP by noon on Tuesday, November 29th.
+                </p>
+              </div>
               
-              <p>Learn from distinguished panelists about differences in career advancement between industry and academia and how to foster mutually beneficial collaborations in the data science/technology industry.  Panelists will include:</p>
-              <ul>
-                <li><span class="underline">John Behrens</span>, Idzik Computing & Digital Technology Program</li>
-                <li><span class="font-bold">Monisha Ghosh, Electrical Engineering</span></li>
-                <li>Matt Harrison, Chase Manufacturing</li>
-                <li>Fanny Ye, Computer Science and Engineering</li>
-              </ul>
-              <p>RSVP by noon on Tuesday, November 29th.
-              </p>
               <div class="flex" mc:hideable>
                 <div class="inline p-3" style="background:#0C2340; border-radius:12px; border:2px solid #0C2340;">
                   <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">RSVP Now</span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;"></a>
@@ -860,13 +863,21 @@
 
               <table class="w-full border-collapse" style="background-color:#E1E8F2;" mc:repeatable="section" mc:variant="Darker Background" mc:label="Dark BG" mc:hideable>
                 <tr>
-                  <td class="p-6" mc:edit="section_1">
-                    <h3>AnalytiXIN Summer Internships</h3>
-                    <p>The Lucy Family Institute for Data & Society invites applications for the AnalytiXIN Summer Internship program to engage with Indiana companies who have committed to growing their digital and analytics capabilities through the development of skilled workforces.
-                    </p>
-                    <p>These <a href="#">Central Indiana Corporate Partnership (CICP)</a> companies provide a dynamic experiential learning environment for summer internship opportunities for STEM students to work with industry leaders and to pursue solutions in data science, analytics, and cybersecurity. The AnalytiXIN summer interns will be hosted at the 16 Tech Innovation District or the host Company office in Indianapolis.
-                    </p>
-                    <p>The funding for the internship includes a stipend as well as housing support. The internship period will be 8 weeks, starting about June 1st.</p>
+                  <td class="p-6">
+                    <h3 mc:edit="section_1_h3" mc:hideable>AnalytiXIN Summer Internships</h3>
+                    <div mc:edit="section_1_p">
+                      <p>The Lucy Family Institute for Data & Society invites applications for the AnalytiXIN Summer Internship program to engage with Indiana companies who have committed to growing their digital and analytics capabilities through the development of skilled workforces.
+                      </p>
+                      <p>These <a href="#">Central Indiana Corporate Partnership (CICP)</a> companies provide a dynamic experiential learning environment for summer internship opportunities for STEM students to work with industry leaders and to pursue solutions in data science, analytics, and cybersecurity. The AnalytiXIN summer interns will be hosted at the 16 Tech Innovation District or the host Company office in Indianapolis.
+                      </p>
+                      <p>The funding for the internship includes a stipend as well as housing support. The internship period will be 8 weeks, starting about June 1st.</p>
+                      
+                    </div>
+                    <div class="flex" mc:hideable>
+                      <div class="inline p-3" style="background:#0C2340; border-radius:12px; border:2px solid #0C2340;">
+                        <span mc:edit="section_1_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;"></a>
+                      </div>
+                    </div>
                   </td>
                 </tr>
 
@@ -874,21 +885,30 @@
 
               <table class="w-full border-collapse" style="background-color:#EDF2F9;" mc:repeatable="section" mc:variant="Lighter Background"  mc:label="Light BG" mc:hideable>
                 <tr>
-                  <td class="p-6" mc:edit="section_2">
+                  <td class="p-6" >
                     <div class="pb-6" style="padding-bottom: 24px;">
-                      <img class="w-full" src="assets/video.png" mc:edit="video_image" mc:label="Video Image" style="width: 100%;">
+                      <img class="w-full" src="assets/video.png" mc:edit="video_image" mc:label="Video Image" style="width: 100%;" mc:hideable />
                     </div>
-                    <h3>D4 Emergency Roundtable Series</h3>
-                    <h4>Fostering tsunami resilience through vertical evacuation</h4>
-                    <p>Wednesday, December 14, 4 pm EST
-                      6 pm SCL / 9 pm GMT (ZOOM)
-                      
-                      Information Designer, Claudine Jaenichen, “Cognition and Wayfinding for Disaster Planning”
-                      
-                      Architect Jorge León (Valparaiso Chile) “Fostering Tsunami Resilience through Vertical Evacuation”
-                      
-                      This event is being done with the Design Network for Emergency Management, DNEM, and the Chilean National Research Centre in Disaster Management, CIGIDEN.</p>
-                  </td>
+                    <h3 mc:edit="section_2_h3" mc:hideable>D4 Emergency Roundtable Series</h3>
+                    <h4 mc:edit="section_2_h4" mc:hideable>Fostering tsunami resilience through vertical evacuation</h4>
+                    <div mc:edit="section_4_p">
+                      <p>Wednesday, December 14, 4 pm EST
+                        6 pm SCL / 9 pm GMT (ZOOM)
+                        
+                        Information Designer, Claudine Jaenichen, “Cognition and Wayfinding for Disaster Planning”
+                        
+                        Architect Jorge León (Valparaiso Chile) “Fostering Tsunami Resilience through Vertical Evacuation”
+                        
+                        This event is being done with the Design Network for Emergency Management, DNEM, and the Chilean National Research Centre in Disaster Management, CIGIDEN.</p>
+                    
+                        
+                    </div>
+                    <div class="flex" mc:hideable>
+                        <div class="inline p-3" style="background:#0C2340; border-radius:12px; border:2px solid #0C2340;">
+                          <span mc:edit="section_4_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">RSVP Now</span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;"></a>
+                        </div>
+                      </div>
+                    </td>
                 </tr>
               </table>
 
@@ -901,6 +921,11 @@
                     <p>These <a href="#">Central Indiana Corporate Partnership (CICP)</a> companies provide a dynamic experiential learning environment for summer internship opportunities for STEM students to work with industry leaders and to pursue solutions in data science, analytics, and cybersecurity. The AnalytiXIN summer interns will be hosted at the 16 Tech Innovation District or the host Company office in Indianapolis.
                     </p>
                     <p>The funding for the internship includes a stipend as well as housing support. The internship period will be 8 weeks, starting about June 1st.</p>
+                    <div class="flex" mc:hideable>
+                      <div class="inline p-3" style="background:#0C2340; border-radius:12px; border:2px solid #0C2340;">
+                        <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;"></a>
+                      </div>
+                    </div>
                   </td>
                 </tr>
 
@@ -912,9 +937,9 @@
           <table class="w-full border-collapse" style="background-color:#EDF2F9;" mc:repeatable="section" mc:variant="Lighter with Button"  mc:label="Light w/button" mc:hideable>
             <tr>
               <td class="p-6">
-                <h2 class="pb-4" mc:edit="section_lb_1">iTREDS Faculty Opportunity</h2>
-                <h3 class="pb-4" mc:edit="section_lb_2">Would you like to work with an interdisciplinary team of iTREDS scholars? </h3>
-                <p class="pb-1" mc:edit="section_lb_3">Wednesday, December 14, 4 pm EST
+                <h2 class="pb-4" mc:edit="section_lb_1" mc:hideable>iTREDS Faculty Opportunity</h2>
+                <h3 class="pb-4" mc:edit="section_lb_2" mc:hideable>Would you like to work with an interdisciplinary team of iTREDS scholars? </h3>
+                <p class="pb-1" mc:edit="section_lb_3" mc:hideable>Wednesday, December 14, 4 pm EST
                   6 pm SCL / 9 pm GMT (ZOOM)
                   
                   Information Designer, Claudine Jaenichen, “Cognition and Wayfinding for Disaster Planning”
