@@ -1,4 +1,15 @@
-# avaya-email
+# ndli-email
+
+## MailChimp Template Tags
+
+`mc:edit="header"`
+Use this to name your email header.
+
+`mc:hideable`
+Use this to name your email header.
+
+`mc:repeatable`
+Is used to provide a duplication action for a particular element within a template.
 
 ## Loading Google Fonts
 Uses custom fonts. Uses Google Font with link and @import
