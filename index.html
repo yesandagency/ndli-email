@@ -314,6 +314,28 @@
       /*@editable*/
       color: #2050B1;
     }
+    /*
+  @tab Page
+	@section Button Style
+	@tip Set the styling for all buttons.
+	@style a Button
+	*/
+    .ndli-btn{
+      /*@editable*/
+      background:#0C2340; 
+      border-radius:12px;
+      color: #ffffff;
+    }
+    .ndli-btn a{
+      /*@editable*/
+      color: #ffffff;
+      text-decoration: none;
+      display: inline;
+    }
+    .ndli-btn span *, .ndli-btn img{
+      vertical-align: middle;
+      display: inline;
+    }
 /*
 	@tab Page
 	@section List Style
@@ -834,7 +856,6 @@
                 <p class="font-bold" style="font-weight: 700;">Friday, December 2nd<br>
                   12:00-1:00 pm</p>
   
-                
                 <p>Learn from distinguished panelists about differences in career advancement between industry and academia and how to foster mutually beneficial collaborations in the data science/technology industry.  Panelists will include:</p>
                 <ul>
                   <li><span class="underline" style="-webkit-text-decoration-line: underline; text-decoration-line: underline;">John Behrens</span>, Idzik Computing & Digital Technology Program</li>
@@ -847,15 +868,15 @@
               </div>
               
               <div class="flex" mc:hideable style="display: flex;">
-                <div class="inline p-3" style="display: inline; padding: 12px; background: #0C2340; border-radius: 12px; border: 2px solid #0C2340;">
-                  <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">RSVP Now</a></span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;">
+                <div class="inline px-4 py-3 align-middle ndli-btn" style="display: inline; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
+                  <span mc:edit="section_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-left:10px;width:14px;">
                 </div>
               </div>
+              
             </td>
            </tr>
            <tr>
             <td class="w-full border-collapse p-0" style="width: 100%; border-collapse: collapse; padding: 0;">
-
               <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #E1E8F2;" mc:repeatable="section" mc:variant="Darker Background" mc:label="Dark BG" mc:hideable>
                 <tr>
                   <td class="p-6" style="padding: 24px;">
@@ -869,106 +890,105 @@
                       
                     </div>
                     <div class="flex" mc:hideable style="display: flex;">
-                      <div class="inline p-3" style="display: inline; padding: 12px; background: #0C2340; border-radius: 12px; border: 2px solid #0C2340;">
-                        <span mc:edit="section_1_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;">
+                      <div class="inline px-4 py-3 align-middle ndli-btn" style="display: inline; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
+                        <span mc:edit="section_2_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-left:10px;width:14px;">
                       </div>
                     </div>
                   </td>
                 </tr>
-
               </table>
-
               <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #EDF2F9;" mc:repeatable="section" mc:variant="Lighter Background" mc:label="Light BG" mc:hideable>
                 <tr>
                   <td class="p-6" style="padding: 24px;">
                     <div class="pb-6" style="padding-bottom: 24px;">
                       <img class="w-full" src="assets/video.png" mc:edit="video_image" mc:label="Video Image" style="width: 100%;" mc:hideable>
                     </div>
-                    <h3 mc:edit="section_2_h3" mc:hideable>D4 Emergency Roundtable Series</h3>
-                    <h4 mc:edit="section_2_h4" mc:hideable>Fostering tsunami resilience through vertical evacuation</h4>
-                    <div mc:edit="section_4_p">
-                      <p>Wednesday, December 14, 4 pm EST
+                    <h3 mc:edit="section_3_h3" mc:hideable>D4 Emergency Roundtable Series</h3>
+                    <h4 mc:edit="section_3_h4" mc:hideable>Fostering tsunami resilience through vertical evacuation</h4>
+                    <div mc:edit="section_3_p">
+                      <p class="font-bold" style="font-weight: 700;">Wednesday, December 14, 4 pm EST<br>
                         6 pm SCL / 9 pm GMT (ZOOM)
-                        
+                      </p>
+                      <p>
                         Information Designer, Claudine Jaenichen, “Cognition and Wayfinding for Disaster Planning”
-                        
+
+                      </p>
+
+                      <p>
                         Architect Jorge León (Valparaiso Chile) “Fostering Tsunami Resilience through Vertical Evacuation”
-                        
+
+                      </p>
+
+                      <p>
                         This event is being done with the Design Network for Emergency Management, DNEM, and the Chilean National Research Centre in Disaster Management, CIGIDEN.</p>
-                    
-                        
+
+                      <p></p>
                     </div>
                     <div class="flex" mc:hideable style="display: flex;">
-                        <div class="inline p-3" style="display: inline; padding: 12px; background: #0C2340; border-radius: 12px; border: 2px solid #0C2340;">
-                          <span mc:edit="section_4_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">RSVP Now</a></span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;">
-                        </div>
+                      <div class="inline px-4 py-3 align-middle ndli-btn" style="display: inline; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
+                        <span mc:edit="section_3_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-left:10px;width:14px;">
                       </div>
+                    </div>
                     </td>
                 </tr>
               </table>
-
               <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #E1E8F2;" mc:repeatable="columns" mc:variant="2-column" mc:label="2-column" mc:hideable>
                 <tr>
-                  <td class="p-6" mc:edit="column_1" style="padding: 24px;">
-                    <h3>AnalytiXIN Summer Internships</h3>
-                    <p>The Lucy Family Institute for Data & Society invites applications for the AnalytiXIN Summer Internship program to engage with Indiana companies who have committed to growing their digital and analytics capabilities through the development of skilled workforces.
-                    </p>
-                    <p>These <a href="#">Central Indiana Corporate Partnership (CICP)</a> companies provide a dynamic experiential learning environment for summer internship opportunities for STEM students to work with industry leaders and to pursue solutions in data science, analytics, and cybersecurity. The AnalytiXIN summer interns will be hosted at the 16 Tech Innovation District or the host Company office in Indianapolis.
-                    </p>
-                    <p>The funding for the internship includes a stipend as well as housing support. The internship period will be 8 weeks, starting about June 1st.</p>
+                  <td class="p-6" style="padding: 24px;">
+                    <div mc:edit="column_1">
+                      <h3>AnalytiXIN Summer Internships</h3>
+                      <p>The Lucy Family Institute for Data & Society invites applications for the AnalytiXIN Summer Internship program to engage with Indiana companies who have committed to growing their digital and analytics capabilities through the development of skilled workforces.
+                      </p>
+                      <p>These <a href="#">Central Indiana Corporate Partnership (CICP)</a> companies provide a dynamic experiential learning environment for summer internship opportunities for STEM students to work with industry leaders and to pursue solutions in data science, analytics, and cybersecurity. The AnalytiXIN summer interns will be hosted at the 16 Tech Innovation District or the host Company office in Indianapolis.
+                      </p>
+                      <p>The funding for the internship includes a stipend as well as housing support. The internship period will be 8 weeks, starting about June 1st.</p>
+                    </div>
                     <div class="flex" mc:hideable style="display: flex;">
-                      <div class="inline p-3" style="display: inline; padding: 12px; background: #0C2340; border-radius: 12px; border: 2px solid #0C2340;">
-                        <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;">
+                      <div class="inline px-4 py-3 align-middle ndli-btn" style="display: inline; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
+                        <span mc:edit="column_1_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-left:10px;width:14px;">
                       </div>
                     </div>
                   </td>
                 </tr>
-
               </table>
             </td>
            </tr>
-    
           </table>
           <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #EDF2F9;" mc:repeatable="section" mc:variant="Lighter with Button" mc:label="Light w/button" mc:hideable>
             <tr>
               <td class="p-6" style="padding: 24px;">
                 <h2 class="pb-4" mc:edit="section_lb_1" mc:hideable style="padding-bottom: 16px;">iTREDS Faculty Opportunity</h2>
                 <h3 class="pb-4" mc:edit="section_lb_2" mc:hideable style="padding-bottom: 16px;">Would you like to work with an interdisciplinary team of iTREDS scholars? </h3>
-                <p class="pb-1" mc:edit="section_lb_3" mc:hideable style="padding-bottom: 4px;">Wednesday, December 14, 4 pm EST
-                  6 pm SCL / 9 pm GMT (ZOOM)
-                  
-                  Information Designer, Claudine Jaenichen, “Cognition and Wayfinding for Disaster Planning”
-                  
-                  Architect Jorge León (Valparaiso Chile) “Fostering Tsunami Resilience through Vertical Evacuation”
-                  
-                  This event is being done with the Design Network for Emergency Management, DNEM, and the Chilean National Research Centre in Disaster Management, CIGIDEN.
+                <div class="pb-1" mc:edit="section_lb_3" mc:hideable style="padding-bottom: 4px;">
+                <p>iTREDS is an NSF-funded Interdisciplinary Traineeship for Socially Responsible and Engaged Data Scientists program. Students develop skills in the areas of teamwork, working with stakeholders, ethics, communication, and entrepreneurship.</p>
+                <p>Launched in 2020, the iTREDS program has recruited three cohorts of 72 students (67% female and 19% URMs) from the University of Notre Dame and St. Mary’s College. 
                 </p>
+                <p>We are now announcing a Call for Capstone Project Topics for Cohort #3. </p>
+                <p>
+                  <span class="font-bold" style="font-weight: 700;">Duration of Capstone:</span> Spring ’23, Fall ’23, and Spring ’24.<br>
+                  <span class="font-bold" style="font-weight: 700;">Team size:</span> 3-5 (interdisciplinary team of scholars)
+                </p>
+                <p></p>
+                <p class="font-bold" style="font-weight: 700;">Important Dates and Submission</p>
+                <ul>
+                  <li>Project topics due date: January 20th, 2023.</li>
+                  <li>Announcement of students’ project topic matching and team formation: January 30, 2023.</li>
+                </ul>
+                <p>Please let us know if you might be interested in mentoring a team of students for their Capstone project. This is also a fantastic Broader Impact call out for your NSF projects. For additional information, please contact Sugana Chawla, iTREDS Program Coordinator, at <a href="mailto:schawla@nd.edu">schawla@nd.edu</a>.</p>
+                </div>
                 <div class="flex" mc:hideable style="display: flex;">
-                  <div class="inline p-3" style="display: inline; padding: 12px; background: #0C2340; border-radius: 12px; border: 2px solid #0C2340;">
-                    <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;">
+                  <div class="inline px-4 py-3 align-middle ndli-btn" style="display: inline; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
+                    <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-left:10px;width:14px;">
                   </div>
                 </div>
               </td>
             </tr>
-            
           </table>
-<!--
-          <table class="w-full border-collapse" style="background-color:#EDF2F9;" mc:repeatable="section" mc:variant="button"  mc:label="Button" mc:hideable>
-            <tr>
-              <td class="px-6 py-3 flex">
-                  <div class="inline p-3" style="background:#0C2340; border-radius:12px; border:2px solid #0C2340;">
-                    <a href="#" style="text-decoration:none;color:#ffffff;" target="_blank" mc:edit="button">Apply to iTREDS<img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;"></a>
-                  </div>
-              </td>
-            </tr>
-          </table>
--->
         </td>
       </tr>
     </table>
   </td>
 </tr>
-
 <!--FOOTER-->
             <tr>
               <td valign="top" id="templateFooter" style="padding:0px; border-bottom:solid 5px #AE9142;">
@@ -992,7 +1012,7 @@ Notre Dame, IN 46556 USA
                     </tr>
                     <tr>
                       <td>
-                        <img width="18px" height="18px" src="assets/twitter-logo.png" alt="Twitter Logo" mc:edit="twitter_logo" mc:label="Twitter Logo">
+                        <a href="https://twitter.com/lucy_institute" title="Lucy Institute's Twitter"><img width="18px" height="18px" src="assets/twitter-logo.png" alt="Twitter Logo" mc:edit="twitter_logo" mc:label="Twitter Logo"></a>
                       </td>
                     </tr>
                     <tr>
