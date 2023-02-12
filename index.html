@@ -19,7 +19,7 @@
   <title>*|MC:SUBJECT|*</title>
   <style type="text/css">
     p {
-      margin:0 0 30px 0;
+      margin:0 0 20px 0;
       padding: 0;
     }
 
@@ -286,6 +286,24 @@
       padding-bottom: 15px;
     }
 
+/*
+	@tab Page
+	@section Paragraph Style
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@style paragraph
+	*/
+    p {
+      /*@editable*/
+      color: #12223E;
+      /*@editable*/
+      font-family: Avenir, Adobe Heiti Std, Segoe UI, Trebuchet MS, sans‑serif;
+      /*@editable*/
+      font-size: 13px;
+      /*@editable*/
+      line-height: 168%;
+      /*@editable*/
+      text-align: left;
+    }
     /*
 	@tab Page
 	@section Link Style
@@ -294,9 +312,27 @@
 	*/
     a{
       /*@editable*/
-      color: #12223E;
+      color: #2050B1;
     }
-
+/*
+	@tab Page
+	@section List Style
+	@tip Set the styling for all ul lists.
+	@style a list
+	*/
+  ul li{
+    /*@editable*/
+    color: #12223E;
+      /*@editable*/
+      font-family: Avenir, Adobe Heiti Std, Segoe UI, Trebuchet MS, sans‑serif;
+      /*@editable*/
+      font-size: 13px;
+      /*@editable*/
+      line-height: 168%;
+      /*@editable*/
+      text-align: left;
+      
+    }
     /*
 	@tab Preheader
 	@section Preheader Style
@@ -324,11 +360,11 @@
     #templatePreheader .mcnTextContent,
     #templatePreheader .mcnTextContent p {
       /*@editable*/
-      color: #12223E;
+      color: #fff;
       /*@editable*/
-      font-family: 'Lato', ;
+      font-family: Avenir, Adobe Heiti Std, Segoe UI, Trebuchet MS, sans‑serif;
       /*@editable*/
-      font-size: 12px;
+      font-size: 13px;
       /*@editable*/
       line-height: 150%;
       /*@editable*/
@@ -793,8 +829,25 @@
 
               <h3>Student Opportunities</h3>
               <h4>Trying to decide between industry and academia?</h4>
-              <p>The Lucy Graduate Scholars invite graduate students to the inaugural panel of the Lucy CONNECT Series.</p>
+              <p class="font-bold" style="font-weight: 700;">The Lucy Graduate Scholars invite graduate students to the inaugural panel of the Lucy CONNECT Series.</p>
+              <p class="font-bold" style="font-weight: 700;">Friday, December 2nd<br>
+                12:00-1:00 pm</p>
+
+              
               <p>Learn from distinguished panelists about differences in career advancement between industry and academia and how to foster mutually beneficial collaborations in the data science/technology industry.  Panelists will include:</p>
+              <ul>
+                <li><span class="underline" style="-webkit-text-decoration-line: underline; text-decoration-line: underline;">John Behrens</span>, Idzik Computing & Digital Technology Program</li>
+                <li><span class="font-bold" style="font-weight: 700;">Monisha Ghosh, Electrical Engineering</span></li>
+                <li>Matt Harrison, Chase Manufacturing</li>
+                <li>Fanny Ye, Computer Science and Engineering</li>
+              </ul>
+              <p>RSVP by noon on Tuesday, November 29th.
+              </p>
+              <div class="flex" mc:hideable style="display: flex;">
+                <div class="inline p-3" style="display: inline; padding: 12px; background: #0C2340; border-radius: 12px; border: 2px solid #0C2340;">
+                  <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">RSVP Now</a></span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;">
+                </div>
+              </div>
             </td>
            </tr>
            <tr>
@@ -817,16 +870,74 @@
               <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #EDF2F9;" mc:repeatable="section" mc:variant="Lighter Background" mc:label="Light BG" mc:hideable>
                 <tr>
                   <td class="p-6" mc:edit="section_2" style="padding: 24px;">
-                    <p>hello</p>
+                    <div class="pb-6" style="padding-bottom: 24px;">
+                      <img class="w-full" src="assets/video.png" mc:edit="video_image" mc:label="Video Image" style="width: 100%;">
+                    </div>
+                    <h3>D4 Emergency Roundtable Series</h3>
+                    <h4>Fostering tsunami resilience through vertical evacuation</h4>
+                    <p>Wednesday, December 14, 4 pm EST
+                      6 pm SCL / 9 pm GMT (ZOOM)
+                      
+                      Information Designer, Claudine Jaenichen, “Cognition and Wayfinding for Disaster Planning”
+                      
+                      Architect Jorge León (Valparaiso Chile) “Fostering Tsunami Resilience through Vertical Evacuation”
+                      
+                      This event is being done with the Design Network for Emergency Management, DNEM, and the Chilean National Research Centre in Disaster Management, CIGIDEN.</p>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #E1E8F2;" mc:repeatable="columns" mc:variant="2-column" mc:label="2-column" mc:hideable>
+                <tr>
+                  <td class="p-6" mc:edit="column_1" style="padding: 24px;">
+                    <h3>AnalytiXIN Summer Internships</h3>
+                    <p>The Lucy Family Institute for Data & Society invites applications for the AnalytiXIN Summer Internship program to engage with Indiana companies who have committed to growing their digital and analytics capabilities through the development of skilled workforces.
+                    </p>
+                    <p>These <a href="#">Central Indiana Corporate Partnership (CICP)</a> companies provide a dynamic experiential learning environment for summer internship opportunities for STEM students to work with industry leaders and to pursue solutions in data science, analytics, and cybersecurity. The AnalytiXIN summer interns will be hosted at the 16 Tech Innovation District or the host Company office in Indianapolis.
+                    </p>
+                    <p>The funding for the internship includes a stipend as well as housing support. The internship period will be 8 weeks, starting about June 1st.</p>
                   </td>
                 </tr>
 
               </table>
             </td>
            </tr>
-      
+    
           </table>
-
+          <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #EDF2F9;" mc:repeatable="section" mc:variant="Lighter with Button" mc:label="Light w/button" mc:hideable>
+            <tr>
+              <td class="p-6" style="padding: 24px;">
+                <h2 class="pb-4" mc:edit="section_lb_1" style="padding-bottom: 16px;">iTREDS Faculty Opportunity</h2>
+                <h3 class="pb-4" mc:edit="section_lb_2" style="padding-bottom: 16px;">Would you like to work with an interdisciplinary team of iTREDS scholars? </h3>
+                <p class="pb-1" mc:edit="section_lb_3" style="padding-bottom: 4px;">Wednesday, December 14, 4 pm EST
+                  6 pm SCL / 9 pm GMT (ZOOM)
+                  
+                  Information Designer, Claudine Jaenichen, “Cognition and Wayfinding for Disaster Planning”
+                  
+                  Architect Jorge León (Valparaiso Chile) “Fostering Tsunami Resilience through Vertical Evacuation”
+                  
+                  This event is being done with the Design Network for Emergency Management, DNEM, and the Chilean National Research Centre in Disaster Management, CIGIDEN.
+                </p>
+                <div class="flex" mc:hideable style="display: flex;">
+                  <div class="inline p-3" style="display: inline; padding: 12px; background: #0C2340; border-radius: 12px; border: 2px solid #0C2340;">
+                    <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+          </table>
+<!--
+          <table class="w-full border-collapse" style="background-color:#EDF2F9;" mc:repeatable="section" mc:variant="button"  mc:label="Button" mc:hideable>
+            <tr>
+              <td class="px-6 py-3 flex">
+                  <div class="inline p-3" style="background:#0C2340; border-radius:12px; border:2px solid #0C2340;">
+                    <a href="#" style="text-decoration:none;color:#ffffff;" target="_blank" mc:edit="button">Apply to iTREDS<img src="assets/btn-icon.png" style="margin-bottom:-3px;margin-left:10px;width:13px;"></a>
+                  </div>
+              </td>
+            </tr>
+          </table>
+-->
         </td>
       </tr>
     </table>
@@ -840,28 +951,28 @@
                   <tbody class>
                     <tr>
                       <td valign="top" class="mcnImageBlockInner text-center text-white text-[9px] p-5" style="padding: 20px; text-align: center; font-size: 9px; --tw-text-opacity: 1; color: rgb(255 255 255 / var(--tw-text-opacity));">
-                        <img width="127px" height="52px" src="assets/lucy-logo-footer.png" alt="Lucy Institute Logo">
-                        <p>
+                        <img width="127px" height="52px" src="assets/lucy-logo-footer.png" alt="Lucy Institute Logo" mc:edit="lacy_logo" mc:label="Lucy Institute Logo">
+                        <p mc:edit="copyright">
                           Copyright © *2022 *Lucy Family Institute for Data & Society, All rights reserved.
                         </p>
-                        <p>
+                        <p mc:edit="address">
                           Our mailing address is:<br>
 384E Nieuwland Science Hall<br>
 Notre Dame, IN 46556 USA
                         </p>
-                        <p>
+                        <p mc:edit="contact">
                           574-631-7095  |  lucyinstitute@nd.edu
                         </p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <img width="18px" height="18px" src="assets/twitter-logo.png" alt="Twitter Logo">
+                        <img width="18px" height="18px" src="assets/twitter-logo.png" alt="Twitter Logo" mc:edit="twitter_logo" mc:label="Twitter Logo">
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <img class="py-4" width="84px" height="20px" src="assets/university-logo.png" alt="University Logo" style="padding-top: 16px; padding-bottom: 16px;">
+                        <img class="py-4" width="84px" height="20px" src="assets/university-logo.png" alt="University Logo" mc:edit="notre_dame_image" mc:label="University Logo" style="padding-top: 16px; padding-bottom: 16px;">
                       </td>
                     </tr>
                   </tbody>
