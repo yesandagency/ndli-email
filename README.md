@@ -2,6 +2,8 @@
 
 ## MailChimp Template Tags
 
+[https://templates.mailchimp.com/getting-started/template-language/]
+
 `mc:edit="header"`
 Use this to name your email header.
 
