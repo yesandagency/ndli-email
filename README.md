@@ -1,4 +1,4 @@
-# ndli-email
+# MailChimp Template - This Week in Lacy
 
 ## MailChimp Template Tags
 
