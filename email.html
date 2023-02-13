@@ -154,6 +154,27 @@
       table-layout: fixed !important;
     }
 
+
+    .ndli-btn {
+      background: #0C2340;
+      border-radius: 12px;
+      color: #ffffff;
+    }
+
+    .ndli-btn a {
+      color: #ffffff;
+      text-decoration: none;
+      display: inline;
+    }
+    .ndli-btn a:hover {
+      cursor:pointer;
+    }
+
+    .ndli-btn span *,
+    .ndli-btn img {
+      vertical-align: middle;
+      display: inline;
+    }
   /*
 	@tab Page
 	@section Background Style
@@ -325,24 +346,6 @@
       font-family: 'Libre Franklin', 'Lato', Avenir, Adobe Heiti Std, Segoe UI, Trebuchet MS, sans‑serif;
     }
 
-    .ndli-btn {
-      background: #0C2340;
-      border-radius: 12px;
-      color: #ffffff;
-    }
-
-    .ndli-btn a {
-      color: #ffffff;
-      text-decoration: none;
-      display: inline;
-    }
-
-    .ndli-btn span *,
-    .ndli-btn img {
-      vertical-align: middle;
-      display: inline;
-    }
-
   /*
 	@tab Page
 	@section List Style
@@ -398,6 +401,8 @@
     #templateHeader {
       /*@editable*/
       background-color: #0C2340;
+      /*@editable*/
+      color: #ffffff;
       background-image: none;
       background-repeat: no-repeat;
       background-position: center;
@@ -784,7 +789,7 @@
       #templateFooter .mcnTextContent,
       #templateFooter .mcnTextContent p {
         /*@editable*/
-        font-size: 14px !important;
+        font-size: 13px !important;
         /*@editable*/
         line-height: 150% !important;
       }
@@ -845,10 +850,16 @@
                       <table class="w-full border-collapse">
                         <tr>
                           <td class="p-6" style="background-color:#EDF2F9;">
-                            <h1 mc:edit="title" mc:label="Title">This Week in Lucy</h1>
-                            <h2 class="py-8 border-t-5" mc:edit="subtitle" mc:label="Sub Title" mc:hideable>
-                              Upcoming Events
-                            </h2>
+                            <div class="pb-8" mc:hideable>
+                              <h1 mc:edit="title" mc:label="Title">This Week in Lucy</h1>
+                            </div>
+                            
+                            
+                            <div class="pb-8" mc:hideable>
+                              <h2 mc:edit="subtitle" mc:label="Sub Title">
+                                Upcoming Events
+                              </h2>
+                            </div>
                             <div class="pb-6" mc:hideable>
                               <img class="w-full" src="assets/cover-image.png" mc:edit="cover_image"
                                 mc:label="Cover Image" />
@@ -878,9 +889,7 @@
 
                             <div class="flex" mc:hideable>
                               <div class="inline px-5 py-3 align-middle ndli-btn">
-                                <span mc:edit="section_btn"><a href="#" style="text-decoration:none;color:#ffffff;"
-                                    target="_blank">RSVP Now</span><img src="assets/btn-icon.png"
-                                  style="margin-left:10px; height:14px;"></a>
+                                <span mc:edit="section_btn"><a href="#" target="_blank">RSVP Now</span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
                               </div>
                             </div>
 
@@ -912,8 +921,7 @@
                                   </div>
                                   <div class="flex" mc:hideable>
                                     <div class="inline px-5 py-3 align-middle ndli-btn">
-                                      <span mc:edit="section_2_btn"><a href="#"
-                                          style="text-decoration:none;color:#ffffff;" target="_blank">Explore AnalytiXIN</span><img src="assets/btn-icon.png"
+                                      <span mc:edit="section_2_btn"><a href="#" target="_blank">Explore AnalytiXIN</span><img src="assets/btn-icon.png"
                                         style="margin-left:10px; height:14px;"></a>
                                     </div>
                                   </div>
@@ -955,8 +963,7 @@
                                   </div>
                                   <div class="flex" mc:hideable>
                                     <div class="inline px-5 py-3 align-middle ndli-btn">
-                                      <span mc:edit="section_3_btn"><a href="#"
-                                          style="text-decoration:none;color:#ffffff;" target="_blank">Register Now</span><img src="assets/btn-icon.png"
+                                      <span mc:edit="section_3_btn"><a href="#" target="_blank">Register Now</span><img src="assets/btn-icon.png"
                                         style="margin-left:10px; height:14px;"></a>
                                     </div>
                                   </div>
@@ -967,7 +974,7 @@
                               mc:repeatable="columns" mc:variant="2-column" mc:label="2-column" mc:hideable>
                               <tr>
                                 <td class="p-6">
-                                  <h2 class="pb-4" mc:edit="columns_heading">News from Lucy</h2>
+                                  <div class="pb-4" ><h2 mc:edit="columns_heading">News from Lucy</h2></div>
                                   <table class="w-full border-collapse mb-4" mc:hideable>
                                     <tr class="flex row space-x-4">
                                       <td class="basis-1/2 self-center">
@@ -1003,8 +1010,7 @@
                                   </div>
                                   <div class="flex" mc:hideable>
                                     <div class="inline px-5 py-3 align-middle ndli-btn">
-                                      <span mc:edit="columns_btn"><a href="#"
-                                          style="text-decoration:none;color:#ffffff;" target="_blank">Read More</span><img src="assets/btn-icon.png"
+                                      <span mc:edit="columns_btn"><a href="#" target="_blank">Read More</span><img src="assets/btn-icon.png"
                                         style="margin-left:10px; height:14px;"></a>
                                     </div>
                                   </div>
@@ -1047,10 +1053,8 @@
                                 Coordinator, at <a href="mailto:schawla@nd.edu">schawla@nd.edu</a>.</p>
                             </div>
                             <div class="flex" mc:hideable>
-                              <div class="inline px-5 py-3 align-middle ndli-btn">
-                                <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;"
-                                    target="_blank">Apply to iTREDS</span><img src="assets/btn-icon.png"
-                                  style="margin-left:10px; height:14px;"></a>
+                              <div class="inline px-5 py-3 align-middle ndli-btn" mc:edit="section_lb_4">
+                                <a href="#" target="_blank">Apply to iTREDS<img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
                               </div>
                             </div>
                           </td>

@@ -153,6 +153,27 @@
       table-layout: fixed !important;
     }
 
+
+    .ndli-btn {
+      background: #0C2340;
+      border-radius: 12px;
+      color: #ffffff;
+    }
+
+    .ndli-btn a {
+      color: #ffffff;
+      text-decoration: none;
+      display: inline;
+    }
+    .ndli-btn a:hover {
+      cursor:pointer;
+    }
+
+    .ndli-btn span *,
+    .ndli-btn img {
+      vertical-align: middle;
+      display: inline;
+    }
   /*
 	@tab Page
 	@section Background Style
@@ -324,24 +345,6 @@
       font-family: 'Libre Franklin', 'Lato', Avenir, Adobe Heiti Std, Segoe UI, Trebuchet MS, sans‑serif;
     }
 
-    .ndli-btn {
-      background: #0C2340;
-      border-radius: 12px;
-      color: #ffffff;
-    }
-
-    .ndli-btn a {
-      color: #ffffff;
-      text-decoration: none;
-      display: inline;
-    }
-
-    .ndli-btn span *,
-    .ndli-btn img {
-      vertical-align: middle;
-      display: inline;
-    }
-
   /*
 	@tab Page
 	@section List Style
@@ -397,6 +400,8 @@
     #templateHeader {
       /*@editable*/
       background-color: #0C2340;
+      /*@editable*/
+      color: #ffffff;
       background-image: none;
       background-repeat: no-repeat;
       background-position: center;
@@ -783,7 +788,7 @@
       #templateFooter .mcnTextContent,
       #templateFooter .mcnTextContent p {
         /*@editable*/
-        font-size: 14px !important;
+        font-size: 13px !important;
         /*@editable*/
         line-height: 150% !important;
       }
@@ -836,10 +841,16 @@
                       <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse;">
                         <tr>
                           <td class="p-6" style="padding: 24px; background-color: #EDF2F9;">
-                            <h1 mc:edit="title" mc:label="Title">This Week in Lucy</h1>
-                            <h2 class="py-8 border-t-5" mc:edit="subtitle" mc:label="Sub Title" mc:hideable style="padding-top: 32px; padding-bottom: 32px;">
-                              Upcoming Events
-                            </h2>
+                            <div class="pb-8" mc:hideable style="padding-bottom: 32px;">
+                              <h1 mc:edit="title" mc:label="Title">This Week in Lucy</h1>
+                            </div>
+                            
+                            
+                            <div class="pb-8" mc:hideable style="padding-bottom: 32px;">
+                              <h2 mc:edit="subtitle" mc:label="Sub Title">
+                                Upcoming Events
+                              </h2>
+                            </div>
                             <div class="pb-6" mc:hideable style="padding-bottom: 24px;">
                               <img class="w-full" src="assets/cover-image.png" mc:edit="cover_image" mc:label="Cover Image" style="width: 100%;">
                             </div>
@@ -868,7 +879,7 @@
 
                             <div class="flex" mc:hideable style="display: flex;">
                               <div class="inline px-5 py-3 align-middle ndli-btn" style="display: inline; padding-left: 20px; padding-right: 20px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
-                                <span mc:edit="section_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">RSVP Now</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
+                                <span mc:edit="section_btn"><a href="#" target="_blank">RSVP Now</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
                               </div>
                             </div>
 
@@ -899,7 +910,7 @@
                                   </div>
                                   <div class="flex" mc:hideable style="display: flex;">
                                     <div class="inline px-5 py-3 align-middle ndli-btn" style="display: inline; padding-left: 20px; padding-right: 20px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
-                                      <span mc:edit="section_2_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Explore AnalytiXIN</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
+                                      <span mc:edit="section_2_btn"><a href="#" target="_blank">Explore AnalytiXIN</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
                                     </div>
                                   </div>
                                 </td>
@@ -938,7 +949,7 @@
                                   </div>
                                   <div class="flex" mc:hideable style="display: flex;">
                                     <div class="inline px-5 py-3 align-middle ndli-btn" style="display: inline; padding-left: 20px; padding-right: 20px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
-                                      <span mc:edit="section_3_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Register Now</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
+                                      <span mc:edit="section_3_btn"><a href="#" target="_blank">Register Now</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
                                     </div>
                                   </div>
                                 </td>
@@ -947,7 +958,7 @@
                             <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #E1E8F2;" mc:repeatable="columns" mc:variant="2-column" mc:label="2-column" mc:hideable>
                               <tr>
                                 <td class="p-6" style="padding: 24px;">
-                                  <h2 class="pb-4" mc:edit="columns_heading" style="padding-bottom: 16px;">News from Lucy</h2>
+                                  <div class="pb-4" style="padding-bottom: 16px;"><h2 mc:edit="columns_heading">News from Lucy</h2></div>
                                   <table class="w-full border-collapse mb-4" mc:hideable style="margin-bottom: 16px; width: 100%; border-collapse: collapse;">
                                     <tr class="flex row space-x-4" style="display: flex;">
                                       <td class="basis-1/2 self-center" style="flex-basis: 50%; align-self: center;">
@@ -983,7 +994,7 @@
                                   </div>
                                   <div class="flex" mc:hideable style="display: flex;">
                                     <div class="inline px-5 py-3 align-middle ndli-btn" style="display: inline; padding-left: 20px; padding-right: 20px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
-                                      <span mc:edit="columns_btn"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Read More</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
+                                      <span mc:edit="columns_btn"><a href="#" target="_blank">Read More</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
                                     </div>
                                   </div>
                                 </td>
@@ -1024,8 +1035,8 @@
                                 Coordinator, at <a href="mailto:schawla@nd.edu">schawla@nd.edu</a>.</p>
                             </div>
                             <div class="flex" mc:hideable style="display: flex;">
-                              <div class="inline px-5 py-3 align-middle ndli-btn" style="display: inline; padding-left: 20px; padding-right: 20px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
-                                <span mc:edit="section_lb_4"><a href="#" style="text-decoration:none;color:#ffffff;" target="_blank">Apply to iTREDS</a></span><img src="assets/btn-icon.png" style="margin-left:10px; height:14px;">
+                              <div class="inline px-5 py-3 align-middle ndli-btn" mc:edit="section_lb_4" style="display: inline; padding-left: 20px; padding-right: 20px; padding-top: 12px; padding-bottom: 12px; vertical-align: middle;">
+                                <a href="#" target="_blank">Apply to iTREDS<img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
                               </div>
                             </div>
                           </td>
