@@ -5,8 +5,11 @@
 `mc:edit="header"`
 Use this to name your email header.
 
+`mc:label="header"`
+Label is not required.
+
 `mc:hideable`
-Use this to name your email header.
+Can be added to any html element to allow a element tot be hidden.
 
 `mc:repeatable`
 Is used to provide a duplication action for a particular element within a template.
