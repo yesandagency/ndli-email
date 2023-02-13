@@ -1,4 +1,4 @@
-# MailChimp Template - This Week in Lacy
+# MailChimp Template - This Week in Lucy
 
 ## MailChimp Template Tags
 
