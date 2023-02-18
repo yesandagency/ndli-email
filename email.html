@@ -253,9 +253,8 @@
       text-align: left;
     }
 
-    h2:before {
-      content: "";
-      position: absolute;
+    .heading-accent{
+      /*position: absolute;*/
       width: 68px;
       height: 3px;
       background: #FFCF01;
@@ -852,6 +851,7 @@
                               <h1 mc:edit="title" mc:label="Title">This Week in Lucy</h1>
                             </div>
                             <div class="pb-8" mc:hideable>
+                              <div class="heading-accent"></div>
                               <h2 mc:edit="subtitle" mc:label="Sub Title">
                                 Upcoming Events
                               </h2>
@@ -969,7 +969,10 @@
                               mc:repeatable="columns" mc:variant="2-column" mc:label="2-column" mc:hideable>
                               <tr>
                                 <td class="px-6 py-8">
-                                  <div class="pb-4" ><h2 mc:edit="columns_heading">News from Lucy</h2></div>
+                                  <div class="pb-4" mc:hideable>
+                                    <div class="heading-accent"></div>
+                                    <h2 mc:edit="columns_heading">News from Lucy</h2>
+                                  </div>
                                   <table class="w-full border-collapse mb-4" mc:hideable>
                                     <tr>
                                       <td class="pb-4" mc:hideable>
