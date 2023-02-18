@@ -161,17 +161,17 @@
       color: #ffffff;
       padding-top:10px;
       padding-bottom:10px;
-      display: inline;
       padding-left: 20px;
       padding-right: 20px;
-      vertical-align: middle;
       color: #ffffff;
-      text-decoration: none;
-    }
-    .ndli-btn span *,
-    .ndli-btn img {
-      vertical-align: middle;
+      text-decoration: none !important;
       display: inline;
+      line-height: 17px;
+    }
+    .ndli-btn img {
+      vertical-align: top;
+      margin-left:10px; 
+      height:17px;
     }
   /*
 	@tab Page
@@ -202,6 +202,11 @@
     .templateContainer {
       /*@editable*/
       border: 0;
+    }
+
+    .body-padding{
+      /*@editable*/
+      padding:20px;
     }
 
   /*
@@ -627,7 +632,15 @@
     }
 
     @media only screen and (max-width: 480px) {
-
+/*
+	@tab Mobile Styles
+	@section Body Padding
+	@tip Remove extra spacing on small screens.
+	*/
+      .body-padding{
+      /*@editable*/
+      padding:0px;
+    }
       /*
 	@tab Mobile Styles
 	@section Heading 1
@@ -797,8 +810,7 @@
 
 <body class="m-0 p-0 font-sans">
   <!--*|IF:MC_PREVIEW_TEXT|*-->
-  <!--[if !gte mso 9]><!----><span class="mcnPreviewText"
-    style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
+  <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
   <!--*|END:IF|*-->
   <center>
     <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
@@ -843,7 +855,7 @@
               <td>
                 <table class="w-full border-collapse" style="background-color: #ffffff;">
                   <tr>
-                    <td class="p-5">
+                    <td class="body-padding">
                       <table class="w-full border-collapse">
                         <tr>
                           <td class="px-6 py-8" style="background-color:#EDF2F9;">
@@ -883,9 +895,9 @@
                               </p>
                             </div>
 
-                            <div class="flex" mc:hideable>
+                            <div mc:hideable>
                               <div class="ndli-btn" mc:edit="section_btn">
-                                <a href="#" target="_blank">RSVP Now<img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
+                                <a href="#" target="_blank">RSVP Now<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
                               </div>
                             </div>
                           </td>
@@ -915,9 +927,9 @@
 
                                   </div>
                                  
-                                  <div class="flex" mc:hideable>
+                                  <div mc:hideable>
                                     <div class="ndli-btn" mc:edit="section_2_btn">
-                                      <a href="#" target="_blank">Explore AnalytiXIN<img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
+                                      <a href="#" target="_blank">Explore AnalytiXIN<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
                                     </div>
                                   </div>
                                 </td>
@@ -957,9 +969,9 @@
                                     </p>
                                   </div>
                                   
-                                  <div class="flex" mc:hideable>
+                                  <div mc:hideable>
                                     <div class="ndli-btn" mc:edit="section_3_btn">
-                                      <a href="#" target="_blank">Register Now<img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
+                                      <a href="#" target="_blank">Register Now<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
                                     </div>
                                   </div>
                                 </td>
@@ -1012,9 +1024,9 @@
                                       internship period will be 8 weeks, starting about June 1st.</p>
                                   </div>
                                   
-                                  <div class="flex" mc:hideable>
+                                  <div mc:hideable>
                                     <div class="ndli-btn" mc:edit="columns_btn">
-                                      <a href="#" target="_blank">Read More<img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
+                                      <a href="#" target="_blank">Read More<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
                                     </div>
                                   </div>
                                 </td>
@@ -1055,9 +1067,9 @@
                                 projects. For additional information, please contact Sugana Chawla, iTREDS Program
                                 Coordinator, at <a href="mailto:schawla@nd.edu">schawla@nd.edu</a>.</p>
                             </div>
-                            <div class="flex" mc:hideable>
+                            <div mc:hideable>
                               <div class="ndli-btn" mc:edit="section_lb_4">
-                                <a href="#" target="_blank">Apply to iTREDS<img src="assets/btn-icon.png" style="margin-left:10px; height:14px;"></a>
+                                <a href="#" target="_blank">Apply to iTREDS<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
                               </div>
                             </div>
                           </td>
