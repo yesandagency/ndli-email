@@ -203,7 +203,11 @@
       /*@editable*/
       border: 0;
     }
-
+ /*
+	@tab Page
+	@section Body Padding
+	@tip Set the body padding for your email.
+	*/
     .body-padding{
       /*@editable*/
       padding:20px;
@@ -259,7 +263,7 @@
     }
 
     .heading-accent{
-      /*position: absolute;*/
+      position:relative;
       width: 68px;
       height: 3px;
       background: #FFCF01;
@@ -288,7 +292,7 @@
       /*@editable*/
       text-align: left;
       /*@editable*/
-      padding-bottom: 15px;
+      padding-bottom: 0px;
     }
 
   /*
@@ -314,7 +318,7 @@
       /*@editable*/
       text-align: left;
       /*@editable*/
-      padding-bottom: 15px;
+      padding-bottom: 0px;
     }
 
   /*
@@ -872,10 +876,13 @@
                               <img class="w-full" src="assets/cover-image.png" mc:edit="cover_image"
                                 mc:label="Cover Image" />
                             </div>
-
-                            <h3 mc:edit="subtitle2" mc:label="Section Heading">Student Opportunities</h3>
-                            <div>
-                              <h4>Trying to decide between industry and academia?</h4>
+                            <div class="pb-4" mc:hideable>
+                              <h3 mc:edit="subtitle2" mc:label="Section Heading">Student Opportunities</h3>
+                            </div>
+                              <div class="pb-4" mc:hideable>
+                                <h4 mc:edit="subtitle3" mc:label="Section Heading 3">Trying to decide between industry and academia?</h4>
+                              </div>
+                              <div mc:edit="body_section1" mc:label="Section 1 Body">
                               <p class="font-bold">The Lucy Graduate Scholars invite graduate students to the inaugural
                                 panel of the Lucy CONNECT Series.</p>
                               <p class="font-bold">Friday, December 2nd<br>
@@ -908,8 +915,11 @@
                               mc:repeatable="section" mc:variant="Darker Background" mc:label="Dark BG" mc:hideable>
                               <tr>
                                 <td class="px-6 py-8">
-                                  <h3 mc:edit="section_1_h3" mc:hideable>AnalytiXIN Summer Internships</h3>
-                                  <div mc:edit="section_1_p">
+                                  <div class="pb-4" mc:hideable>
+                                    <h3 mc:edit="section_1_h3">AnalytiXIN Summer Internships</h3>
+                                  </div>
+                                  
+                                  <div class="pb-4" mc:edit="section_1_p">
                                     <p>The Lucy Family Institute for Data & Society invites applications for the
                                       AnalytiXIN Summer Internship program to engage with Indiana companies who have
                                       committed to growing their digital and analytics capabilities through the
@@ -943,10 +953,15 @@
                                     <img class="w-full" src="assets/video.png" mc:edit="video_image"
                                       mc:label="Video Image" style="width: 100%;" mc:hideable />
                                   </div>
-                                  <h3 mc:edit="section_3_h3" mc:hideable>D4 Emergency Roundtable Series</h3>
-                                  <h4 mc:edit="section_3_h4" mc:hideable>Fostering tsunami resilience through vertical
-                                    evacuation</h4>
-                                  <div mc:edit="section_3_p">
+                                  <div class="pb-4" mc:hideable>
+                                    <h3 mc:edit="section_3_h3" >D4 Emergency Roundtable Series</h3>
+
+                                  </div>
+                                  <div class="pb-4" mc:hideable>
+                                    <h4 mc:edit="section_3_h4" >Fostering tsunami resilience through vertical evacuation</h4>
+                                  </div>
+                                    
+                                  <div class="pb-4" mc:edit="section_3_p">
                                     <p class="font-bold">Wednesday, December 14, 4 pm EST<br>
                                       6 pm SCL / 9 pm GMT (ZOOM)
                                     </p>
@@ -978,14 +993,14 @@
                               </tr>
                             </table>
                             <table class="w-full border-collapse" style="background-color:#E1E8F2;"
-                              mc:repeatable="columns" mc:variant="2-column" mc:label="2-column" mc:hideable>
+                              mc:repeatable="section" mc:variant="2-column" mc:label="2-column" mc:hideable>
                               <tr>
                                 <td class="px-6 py-8">
                                   <div class="pb-4" mc:hideable>
                                     <div class="heading-accent"></div>
                                     <h2 mc:edit="columns_heading">News from Lucy</h2>
                                   </div>
-                                  <table class="w-full border-collapse mb-4" mc:hideable>
+                                  <table class="w-full border-collapse mb-4 table-fixed" mc:hideable>
                                     <tr>
                                       <td class="pb-4" mc:hideable>
                                         <img class="w-full" src="assets/cover-image.png" mc:edit="optional_image" mc:label="Pptional Image"/>
@@ -998,7 +1013,7 @@
                                             the 2022 midterm elections</h3>
                                         </div>
                                       </td>
-                                      <td class="basis-1/2">
+                                      <td class="basis-1/2" >
                                         <div class="flex flex-col justify-start">
                                           <img src="assets/poll.png" class="w-full" mc:edit="column_2" />
                                         </div>
@@ -1006,7 +1021,7 @@
                                     </tr>
 
                                   </table>
-                                  <div mc:edit="after_column">
+                                  <div class="pb-4" mc:edit="after_column" mc:hideable>
 
                                     <p>The Lucy Family Institute for Data & Society invites applications for the
                                       AnalytiXIN Summer Internship program to engage with Indiana companies who have
@@ -1039,10 +1054,15 @@
                         mc:variant="Lighter with Button" mc:label="Light w/button" mc:hideable>
                         <tr>
                           <td class="px-6 py-8">
-                            <h2 class="pb-4" mc:edit="section_lb_1" mc:hideable>iTREDS Faculty Opportunity</h2>
-                            <h3 class="pb-4" mc:edit="section_lb_2" mc:hideable>Would you like to work with an
-                              interdisciplinary team of iTREDS scholars? </h3>
-                            <div class="pb-1" mc:edit="section_lb_3" mc:hideable>
+                            <div class="pb-4" mc:hideable>
+                              <h2 mc:edit="section_lb_1">iTREDS Faculty Opportunity</h2>
+                            </div>
+                            <div class="pb-4" mc:hideable>
+                              <h3 mc:edit="section_lb_2">Would you like to work with an
+                                interdisciplinary team of iTREDS scholars?</h3>
+                            </div>
+                            
+                            <div class="pb-4" mc:edit="section_lb_3" mc:hideable>
                               <p>iTREDS is an NSF-funded Interdisciplinary Traineeship for Socially Responsible and
                                 Engaged Data Scientists program. Students develop skills in the areas of teamwork,
                                 working with stakeholders, ethics, communication, and entrepreneurship.</p>
