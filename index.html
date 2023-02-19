@@ -157,7 +157,6 @@
     .ndli-btn a{
       background: #0C2340;
       border-radius: 12px;
-      color: #ffffff;
       padding-top:10px;
       padding-bottom:10px;
       padding-left: 20px;
@@ -859,14 +858,19 @@
                               <h1 mc:edit="title" mc:label="Title">This Week in Lucy</h1>
                             </div>
                             <div class="pb-8" mc:hideable style="padding-bottom: 32px;">
-                              <div class="heading-accent"></div>
+                              <div class="heading-accent" style="position:relative; width: 68px; height: 3px; background-color: #FFCF01;"></div>
                               <h2 mc:edit="subtitle" mc:label="Sub Title">
                                 Upcoming Events
                               </h2>
                             </div>
-                            <div class="pb-6" mc:hideable style="padding-bottom: 24px;">
-                              <img class="w-full" src="assets/cover-image.png" mc:edit="cover_image" mc:label="Cover Image" style="width: 100%;">
-                            </div>
+                            <table class="w-full border-collapse" mc:hideable style="width: 100%; border-collapse: collapse;">
+                              <tr>
+                                <td class="pb-6" style="padding-bottom: 24px;">
+                                  <img class="w-full" src="assets/cover-image.png" mc:edit="cover_image" mc:label="Cover Image" style="width: 100%;">
+                                </td>
+                              </tr>
+                            </table>
+                           
                             <div class="pb-4" mc:hideable style="padding-bottom: 16px;">
                               <h3 mc:edit="subtitle2" mc:label="Section Heading">Student Opportunities</h3>
                             </div>
@@ -893,11 +897,16 @@
                               </p>
                             </div>
 
-                            <div mc:hideable>
-                              <div class="ndli-btn" mc:edit="section_btn">
-                                <a href="#" target="_blank">RSVP Now<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
-                              </div>
-                            </div>
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-radius: 12px; background-color: #0C2340;" mc:hideable>
+                              <tr>
+                                <td align="center" valign="middle" style="padding: 10px 18px;" mc:edit="section_btn">
+                                  <a href="#" target="_blank" style="color: #ffffff; text-decoration: none !important; display: block; line-height: 14px;">
+                                    Read More
+                                    <img src="assets/btn-icon.png" width="10" height="16" style="display: inline-block; margin-left: 10px; vertical-align: middle;">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                         <tr>
@@ -926,21 +935,32 @@
                                       internship period will be 8 weeks, starting about June 1st.</p>
 
                                   </div>
-                                 
-                                  <div mc:hideable>
-                                    <div class="ndli-btn" mc:edit="section_2_btn">
-                                      <a href="#" target="_blank">Explore AnalytiXIN<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
-                                    </div>
-                                  </div>
+
+                                  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-radius: 12px; background-color: #0C2340;" mc:hideable>
+                                    <tr>
+                                      <td align="center" valign="middle" style="padding: 10px 18px;" mc:edit="section_2_btn">
+                                        <a href="#" target="_blank" style="color: #ffffff; text-decoration: none !important; display: block; line-height: 14px;">
+                                          Read More
+                                          <img src="assets/btn-icon.png" width="10" height="16" style="display: inline-block; margin-left: 10px; vertical-align: middle;">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                             </table>
                             <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #EDF2F9;" mc:repeatable="section" mc:variant="Lighter Background" mc:label="Light BG" mc:hideable>
                               <tr>
                                 <td class="px-6 py-8" style="padding-left: 24px; padding-right: 24px; padding-top: 32px; padding-bottom: 32px;">
-                                  <div class="pb-6" style="padding-bottom: 24px;">
-                                    <img class="w-full" src="assets/video.png" mc:edit="video_image" mc:label="Video Image" style="width: 100%;" mc:hideable>
-                                  </div>
+                                  <table class="w-full border-collapse" mc:hideable style="width: 100%; border-collapse: collapse;">
+                                    <tr>
+                                      <td class="pb-6" style="padding-bottom: 24px;">
+                                        <img class="w-full" src="assets/video.png" mc:edit="video_image" mc:label="Video Image" style="width: 100%;">
+                                      </td>
+                                    </tr>
+                                  </table>
+
+
                                   <div class="pb-4" mc:hideable style="padding-bottom: 16px;">
                                     <h3 mc:edit="section_3_h3">D4 Emergency Roundtable Series</h3>
 
@@ -972,27 +992,43 @@
                                     <p></p>
                                   </div>
                                   
-                                  <div mc:hideable>
-                                    <div class="ndli-btn" mc:edit="section_3_btn">
-                                      <a href="#" target="_blank">Register Now<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
-                                    </div>
-                                  </div>
+                                  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-radius: 12px; background-color: #0C2340;" mc:hideable>
+                                    <tr>
+                                      <td align="center" valign="middle" style="padding: 10px 18px;" mc:edit="section_3_btn">
+                                        <a href="#" target="_blank" style="color: #ffffff; text-decoration: none !important; display: block; line-height: 14px;">
+                                          Read More
+                                          <img src="assets/btn-icon.png" width="10" height="16" style="display: inline-block; margin-left: 10px; vertical-align: middle;">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                             </table>
-                            <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #E1E8F2;" mc:repeatable="section" mc:variant="2-column" mc:label="2-column" mc:hideable>
+                            <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse; background-color: #E1E8F2;" mc:repeatable="section" mc:variant="columns" mc:label="Columns" mc:hideable>
                               <tr>
                                 <td class="px-6 py-8" style="padding-left: 24px; padding-right: 24px; padding-top: 32px; padding-bottom: 32px;">
-                                  <div class="pb-4" mc:hideable style="padding-bottom: 16px;">
-                                    <div class="heading-accent"></div>
-                                    <h2 mc:edit="columns_heading">News from Lucy</h2>
-                                  </div>
-                                  <table class="w-full border-collapse mb-4 table-fixed" mc:hideable style="margin-bottom: 16px; width: 100%; table-layout: fixed; border-collapse: collapse;">
-                                    <tr>
-                                      <td class="pb-4" mc:hideable style="padding-bottom: 16px;">
-                                        <img class="w-full" src="assets/cover-image.png" mc:edit="optional_image" mc:label="Pptional Image" style="width: 100%;">
+                                  <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse;">
+                                    <tr mc:hideable>
+                                      <td class="pb-4" style="padding-bottom: 16px;">
+                                        <div class="heading-accent" style="display: block; position:relative; width: 68px; height: 3px; background: #FFCF01;"></div>
+                                        <h2 mc:edit="columns_heading">News from Lucy</h2>
                                       </td>
                                     </tr>
+                                    <tr mc:hideable>
+                                        <td>
+                                          <table class="w-full border-collapse" style="width: 100%; border-collapse: collapse;">
+                                            <tr>
+                                              <td class="pb-6" style="padding-bottom: 24px;">
+                                              <img class="w-full" style="width: 100%;" src="assets/cover-image.png" mc:edit="optional_image" mc:label="Optional Image">
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                  
+                                  <table class="w-full border-collapse mb-4 table-fixed" mc:hideable style="margin-bottom: 16px; width: 100%; table-layout: fixed; border-collapse: collapse;">
                                     <tr class="flex row space-x-4" style="display: flex;">
                                       <td class="basis-1/2 self-center" style="flex-basis: 50%; align-self: center;">
                                         <div class="flex flex-col justify-center" mc:edit="column_1" style="display: flex; flex-direction: column; justify-content: center;">
@@ -1025,12 +1061,18 @@
                                     <p>The funding for the internship includes a stipend as well as housing support. The
                                       internship period will be 8 weeks, starting about June 1st.</p>
                                   </div>
-                                  
-                                  <div mc:hideable>
-                                    <div class="ndli-btn" mc:edit="columns_btn">
-                                      <a href="#" target="_blank">Read More<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
-                                    </div>
-                                  </div>
+
+                                  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-radius: 12px; background-color: #0C2340;" mc:hideable>
+                                    <tr>
+                                      <td align="center" valign="middle" style="padding: 10px 18px;" mc:edit="columns_btn">
+                                        <a href="#" target="_blank" style="color: #ffffff; text-decoration: none !important; display: block; line-height: 14px;">
+                                          Read More
+                                          <img src="assets/btn-icon.png" width="10" height="16" style="display: inline-block; margin-left: 10px; vertical-align: middle;">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
                                 </td>
                               </tr>
                             </table>
@@ -1073,11 +1115,17 @@
                                 projects. For additional information, please contact Sugana Chawla, iTREDS Program
                                 Coordinator, at <a href="mailto:schawla@nd.edu">schawla@nd.edu</a>.</p>
                             </div>
-                            <div mc:hideable>
-                              <div class="ndli-btn" mc:edit="section_lb_4">
-                                <a href="#" target="_blank">Apply to iTREDS<img src="assets/btn-icon.png" style="margin-left:10px; height:17px;"></a>
-                              </div>
-                            </div>
+            
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-radius: 12px; background-color: #0C2340;" mc:hideable>
+                              <tr>
+                                <td align="center" valign="middle" style="padding: 10px 18px;" mc:edit="section_lb_4">
+                                  <a href="#" target="_blank" style="color: #ffffff; text-decoration: none !important; display: block; line-height: 14px;">
+                                    Read More
+                                    <img src="assets/btn-icon.png" width="10" height="16" style="display: inline-block; margin-left: 10px; vertical-align: middle;">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
